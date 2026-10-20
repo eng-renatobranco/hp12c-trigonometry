@@ -19,8 +19,8 @@ We got:
 
 | Function | Entry Point (NN) | Input (x) - X register | Output (x) - X register | Interval |
 | --- | --- | --- | --- | --- |
-| Sine | 01 | x in: real (rad) | sin(x) | [ -1 , 1 ] |
-| Cosine | 82 | x in: real (rad) | cos(x) | [ -1 , 1 ] |
+| Sine | 01 | x in: [ 0, 2pi ] (rad) | sin(x) | [ -1 , 1 ] |
+| Cosine | 82 | x in: [ 0 , 2pi ] (rad) | cos(x) | [ -1 , 1 ] |
 | Arcsine | 49 | x in: ] -1 , 1 [ | asin(x), rad | ] -pi/2 , pi/2 [ |
 | Arccosine | 28 | x in: ] -1 , 1 ] | acos(x), rad | ] pi , 0 ] |
 | Arctangent | 38 | x in: ] -inf , +inf [ | atan(x), rad | ] -pi/2, pi/2 [
