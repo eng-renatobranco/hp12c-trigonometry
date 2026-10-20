@@ -33,6 +33,8 @@ Notes:
 5. the program uses the registers R0, R1, R2 and R3 as temp variables;
 6. the registers R7, R8, and R9 will not be available in order of the program's size
 
+And, finally, this is a hobby program. For real performance, use a scientific calculator (surelly, any cheap scientific calculator that has trigonometric functions will perform better).
+
 ## Program Input
 To input the program you must clear the program memory of the calculator.
 
