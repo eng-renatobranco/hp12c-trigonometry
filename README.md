@@ -15,9 +15,14 @@ How to use:
 
 We got:
 
-| Function | Entry Point (NN) | Input (x) - X register | Output (x) - X register |
-| --- | --- | --- | --- |
-| Sine | 01 | x real (rad) | sin(x) [-1,1] |
-| Cosine | 82 | x real (rad) | cos(x) [-1,1] |
+| Function | Entry Point (NN) | Input (x) - X register | Output (x) - X register | Interval |
+| --- | --- | --- | --- | --- |
+| Sine | 01 | x in: real (rad) | sin(x) | [ -1 , 1 ] |
+| Cosine | 82 | x in: real (rad) | cos(x) | [ -1 , 1 ] |
+| Arcsine | 49 | x in: ] -1 , 1 [ | asin(x), rad | ] -pi/2 , pi/2 [ |
+| Arccosine | 28 | x in: ] -1 , 1 ] | acos(x), rad | ] pi , 0 ] |
+| Arctangent | 38 | x in: ] -inf , +inf [ | atan(x), rad | ] -pi/2, pi/2 [
 
-
+Notes:
+1. for limit values on arcsine and arccosine, it will take long time to converge and/or it will not converge at all;
+2. for high values on arctangent, it will take a long time to converge and/or it will not converge at all;
