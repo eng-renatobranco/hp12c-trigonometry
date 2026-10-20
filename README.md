@@ -17,7 +17,7 @@ We got:
 
 | Function | Entry Point (NN) | Input (x) - X register | Output (x) - X register |
 | --- | --- | --- | --- |
-| Sine | 01 | x real (rad) | sin(x) |
-| Cosine | 82 | x real (rad) | cos(x) |
+| Sine | 01 | x real (rad) | sin(x) [-1,1] |
+| Cosine | 82 | x real (rad) | cos(x) [-1,1] |
 
 
