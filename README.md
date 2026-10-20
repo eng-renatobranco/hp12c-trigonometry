@@ -4,9 +4,11 @@ The HP-12C is cheaper and easier to find than HP-15C, HP-11C and HP-35S and we w
 But why do this with the HP-12C, if you can use some other scientific calculator to make your trigonometric calculations?... but why not?
 In this way, I implemented some functions using the limited steps of the HP-12C.
 
-Here we have the HP-12C program that implements five trigonometric functions, using 95 programming steps, using X register for input and outup of the functions.
+Here we have the HP-12C program that implements five trigonometric functions, using 95 programming steps,
+using X register for input and outup of the functions.
 
-The implementation was developed based on published algorithms and performed well in some tests. Although, it is not granted the precisions and the use of this program is up to you, at your own risk. It is provided as it is.
+The implementation was developed based on published algorithms and performed well in some tests.
+Although, it is not granted the precisions and the use of this program is up to you, at your own risk. It is provided as it is.
 
 How to use:
 * input in X -> g GTO NN -> R/S -> output in X
@@ -26,3 +28,23 @@ We got:
 Notes:
 1. for limit values on arcsine and arccosine, it will take long time to converge and/or it will not converge at all;
 2. for high values on arctangent, it will take a long time to converge and/or it will not converge at all;
+3. to calculate tan(x) you must calculate sin(x) and divide by cos(x);
+4. the program will use / erase / make useless of the data in Y, Z, and T registers;
+5. the program uses the registers R0, R1, R2 and R3 as temp variables;
+6. the registers R7, R8, and R9 will not be available in order of the program's size
+
+## Program Input
+To input the program you must clear the program memory of the calculator.
+
+
+---- WARNING -----
+
+IT WILL CLEAR ALL THE PROGRAM MEMORY OF THE CALCULATOR. BE AWARE THAT 
+THIS PROCEDURE WILL ERASE ANYTHING THAT IS PREVIOUSLY PROGRAMED!!!!
+
+---- WARNING -----
+
+
+Press `f -> P/R` to enter in program mode.
+Press `f -> PRGM` to clear the Program PGRM memory
+Insert the steps presented in steps_hp12c-trig.txt
