@@ -48,5 +48,7 @@ THIS PROCEDURE WILL ERASE ANYTHING THAT IS PREVIOUSLY PROGRAMED!!!!
 
 
 Press `f -> P/R` to enter in program mode.
+
 Press `f -> PRGM` to clear the Program PGRM memory
+
 Insert the steps presented in steps_hp12c-trig.txt
